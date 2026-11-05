@@ -1,0 +1,1 @@
+--no-audio --sd sdcard --from-ready --keys 200:rec,700:right,1000:pad.east:1500 --screenshot platforms/sdl/golden/column-popup.png --screenshot-at 2000 --quit-after 2200

@@ -1,0 +1,1 @@
+--no-audio --sd sdcard/no-such-dir --screenshot platforms/sdl/golden/no-sd.png --screenshot-at 1500 --quit-after 1800

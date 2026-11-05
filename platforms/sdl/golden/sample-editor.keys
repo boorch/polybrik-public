@@ -1,0 +1,1 @@
+--no-audio --sd sdcard --from-ready --keys 200:shift+fn2,1200:down,1700:insert,2200:down,2700:screen1,4700:menu:2000,5200:down --screenshot platforms/sdl/golden/sample-editor.png --screenshot-at 8200 --quit-after 8400

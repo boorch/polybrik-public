@@ -1,0 +1,11 @@
+# build output
+build-*/
+out/
+dist/
+# local SD card for desktop runs
+sdcard/
+# OS and editor clutter
+.DS_Store
+*.swp
+.vscode/
+.idea/

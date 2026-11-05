@@ -1,0 +1,57 @@
+--- a/zlib/zutil.h
++++ b/zlib/zutil.h
+@@ -130,7 +130,7 @@
+ #  endif
+ #endif
+ 
+-#if defined(MACOS) || defined(TARGET_OS_MAC)
++#if defined(MACOS)
+ #  define OS_CODE  7
+ #  ifndef Z_SOLO
+ #    if defined(__MWERKS__) && __dest_os != __be_os && __dest_os != __win32_os
+--- a/gcc/system.h
++++ b/gcc/system.h
+@@ -206,16 +206,7 @@
+ /* There are an extraordinary number of issues with <ctype.h>.
+    The last straw is that it varies with the locale.  Use libiberty's
+    replacement instead.  */
+-#include "safe-ctype.h"
+-
+-#include <sys/types.h>
+-
+-#include <errno.h>
+-
+-#if !defined (errno) && defined (HAVE_DECL_ERRNO) && !HAVE_DECL_ERRNO
+-extern int errno;
+-#endif
+-
++/* polybrik: C++ std headers before safe-ctype.h (libc++ on macOS, cf. GCC PR111632) */
+ #ifdef __cplusplus
+ #if defined (INCLUDE_ALGORITHM) || !defined (HAVE_SWAP_IN_UTILITY)
+ # include <algorithm>
+@@ -232,11 +223,25 @@
+ #ifdef INCLUDE_VECTOR
+ # include <vector>
+ #endif
++#ifdef INCLUDE_UNIQUE_PTR
++# include <memory>
++#endif
+ # include <cstring>
+ # include <new>
+ # include <utility>
+ #endif
+ 
++#include "safe-ctype.h"
++
++#include <sys/types.h>
++
++#include <errno.h>
++
++#if !defined (errno) && defined (HAVE_DECL_ERRNO) && !HAVE_DECL_ERRNO
++extern int errno;
++#endif
++
++
+ /* Some of glibc's string inlines cause warnings.  Plus we'd rather
+    rely on (and therefore test) GCC's string builtins.  */
+ #define __NO_STRING_INLINES

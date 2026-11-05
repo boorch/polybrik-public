@@ -1,0 +1,1 @@
+--no-audio --sd sdcard --screenshot platforms/sdl/golden/boot-logo.png --screenshot-at 100 --quit-after 400

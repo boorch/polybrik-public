@@ -1,0 +1,1 @@
+--no-audio --sd sdcard --from-ready --keys 200:rec,700:down,1000:down,1300:down,1600:right,1900:right --screenshot platforms/sdl/golden/pattern-editor.png --screenshot-at 2500 --quit-after 2700

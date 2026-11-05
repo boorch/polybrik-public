@@ -1,0 +1,1 @@
+--no-audio --sd sdcard --from-ready --screenshot platforms/sdl/golden/start.png --screenshot-at 1700 --quit-after 1900

@@ -1,0 +1,1 @@
+--no-audio --sd sdcard --from-ready --keys 200:menu:2000,700:right --screenshot platforms/sdl/golden/menu-popup.png --screenshot-at 1200 --quit-after 1400

@@ -1,0 +1,1 @@
+--no-audio --sd sdcard --from-ready --screenshot platforms/sdl/golden/legend-base.png --screenshot-strip platforms/sdl/golden/legend-base-strip.png --screenshot-at 1200 --quit-after 1400

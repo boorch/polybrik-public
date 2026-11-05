@@ -1,0 +1,1 @@
+--sd sdcard --keys 3500:shift+fn2,4500:down,5000:insert,5500:down,5800:down,6100:down,6400:down,7000:screen1,8500:fn1 --screenshot load.png --screenshot-at 9500 --quit-after 9700

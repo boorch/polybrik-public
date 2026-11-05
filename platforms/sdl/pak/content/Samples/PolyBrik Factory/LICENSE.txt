@@ -1,0 +1,10 @@
+PolyBrik Factory Samples License
+
+Copyright (c) 2026 Burç Tuncer.
+
+1. You may use these samples in your own music and audio productions, commercial or not, with no
+   fee and no credit required.
+2. You may share this pack for free, unchanged and with this license included.
+3. You may not sell, rent or license these samples, alone or as part of another sample pack, sound
+   library, preset bank or similar product, and you may not claim them as your own.
+4. The samples are provided as is, without warranty of any kind.
